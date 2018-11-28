@@ -48,35 +48,32 @@ function findDebris(){
 }
 
 function buildNewHome(){
-	putBeeper();
 	turnRight();
-	move();
 	putBeeper();
-	turnRight();
-	move();
-	putBeeper();
-	move();
-	putBeeper();
+	repeat(2){
+		move();
+		putBeeper();
+	}
+	repeat(2){
+		move();
+		turnRight();
+	}
+	repeat(3){
+		putBeeper();
+		move();
+	}	
 	turnLeft();
 	move();
-	putBeeper();
 	turnLeft();
-	move();
-	putBeeper();
-	move();
-	putBeeper();
+	repeat(3){
+		putBeeper();
+		move();
+	}
 	turnAround();
-	move();
+	repeat(3){
+		move();
+	}
 	turnLeft();
-	move();
-	putBeeper();
-	turnAround();
-	move();
-	move();
-	move();
-	turnLeft();
-	move();
-	putBeeper();
 }
 
 
